@@ -6,20 +6,19 @@ echo "Checking out master branch for deployment"
 git checkout master
 
 echo "Copying temp build folder from parent into master"
-pwd
-# cp -r ../build/* .
+cp -r ../build/* .
 
-# echo "Git add all files"
-# git add .
+echo "Git add all files"
+git add .
 
-# echo "Git commit message"
-# git commit -m "Portolio update"
+echo "Git commit message"
+git commit -m "Portolio update"
 
-# echo "Git push to the MOON!"
-# git push
+echo "Git push to the MOON!"
+git push
 
-# echo "Going back to main branch for development"
-# git checkout main
+echo "Going back to main branch for development"
+git checkout main
 
 echo "Remove temp build folder in parent"
 rm -rf ../build
