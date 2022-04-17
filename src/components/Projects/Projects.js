@@ -21,6 +21,10 @@ const Projects = (props) => {
 				loop={true}
 				freeMode={true}
 				lazy={true}
+				autoplay={{
+					delay: 1500,
+					disableOnInteraction: false,
+				}}
 				breakpoints={{
 					1920: {
 						slidesPerView: 4.2,
