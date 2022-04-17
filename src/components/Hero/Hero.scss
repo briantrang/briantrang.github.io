@@ -1,0 +1,76 @@
+@import "../../constants/Variables.scss";
+
+.heroContainer {
+    height: calc(100vh - 50px);
+    background-color: black;
+
+    .hero-contents {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+
+        @media only screen and (min-width: $breakpoint-md) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .hero-text {
+            margin: auto 0;
+            color: white;
+            font-weight: 600;
+
+            .hero-text-eyebrow {
+                font-size: 30px;
+                @media only screen and (min-width: $breakpoint-xxl) {
+                    font-size: 45px;
+                }
+            }
+            .hero-text-heading {
+                font-size: 30px;
+                font-weight: 700;
+
+                @media only screen and (min-width: $breakpoint-xxl) {
+                    font-size: 60px;
+                }
+            }
+            .hero-text-job {
+                font-size: 36px;
+                @media only screen and (min-width: $breakpoint-xxl) {
+                    font-size: 45px;
+                }
+            }
+
+            .hero-social-icon {
+                font-size: 24px;
+                padding-right: 2rem;
+            }
+        }
+
+        .hero-image-container {
+            max-height: 300px;
+            @media only screen and (min-width: $breakpoint-md) {
+                max-height: calc(100vh - 75px);
+            }
+            .hero-image {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.react-rotating-text-cursor {
+    animation: blinking-cursor 0.8s cubic-bezier(0.99, 0.01, 0.01, 0.99) 0s infinite;
+}
+
+@keyframes blinking-cursor {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

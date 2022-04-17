@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+.project-item-card {
+  border-radius: 25px;
+}
+
+.project-item-card .project-image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.project-item-card .project-content {
+  background-color: white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 2.5rem 0 2.5rem 0;
+  margin: auto 0;
+}
+
+.project-item-card .project-content .project-company-name {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.project-item-card .project-content .project-company-info {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.project-item-card .project-content .project-company-link {
+  background-color: transparent;
+  border: none;
+  color: #0066cc;
+}
+
+.project-item-card .project-content .project-company-link .chevron {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+}
+
+.project-item-card .project-content .project-company-link .chevron::after {
+  content: "";
+  border-right: 1px solid #0066cc;
+  border-bottom: 1px solid #0066cc;
+  width: 50%;
+  height: 50%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 65%;
+  -webkit-transform: translate(-30%, -50%) rotate(-45deg);
+  transform: translate(-30%, -50%) rotate(-45deg);
+}
+/*# sourceMappingURL=ProjectItems.css.map */

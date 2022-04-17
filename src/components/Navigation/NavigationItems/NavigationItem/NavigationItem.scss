@@ -1,0 +1,50 @@
+@import "../../../../constants/Variables.scss";
+
+.nav-item {
+    display: inline-flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    font-size: 12px;
+
+    a {
+        color: rgba(255, 255, 255, 0.85);
+        text-decoration: none;
+        font-weight: 500;
+
+        &:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+}
+.nav-mobile-item {
+    padding: 0.5rem 0 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+    a {
+        color: rgba(255, 255, 255, 0.85);
+        text-decoration: none;
+        font-weight: 400;
+
+        &:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+    &:last-child {
+        border-bottom: none;
+    }
+}
+.nav-button {
+    background-color: white;
+    height: 25px;
+    border-radius: 30px;
+    margin-left: 1rem;
+    a {
+        color: rgba(0, 0, 0, 0.8);
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+            color: black;
+        }
+    }
+}

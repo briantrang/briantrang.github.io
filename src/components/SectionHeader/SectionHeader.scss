@@ -1,0 +1,24 @@
+@import "../../constants/Variables.scss";
+
+.section-header-content {
+    text-align: center;
+    .section-header-eyebrow {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $grayColor;
+    }
+
+    .section-header-heading {
+        font-size: 40px;
+        @media only screen and (min-width: $breakpoint-md) {
+            font-size: 50px;
+        }
+        font-weight: 700;
+        line-height: 50px;
+    }
+
+    .section-header-body {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}

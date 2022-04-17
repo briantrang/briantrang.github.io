@@ -1,0 +1,66 @@
+@import "../../../constants/Variables.scss";
+
+.project-item-card {
+    border-radius: 25px;
+    height: 100%;
+    .project-image {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+
+    .project-content {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: auto 0;
+
+        .project-company-name {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .project-company-info {
+            max-width: 90%;
+            margin-bottom: 2rem;
+        }
+
+        .project-company-link {
+            background-color: transparent;
+            border: none;
+            color: $linkColor;
+            text-align: left;
+            padding: 0;
+            position: absolute;
+            bottom: 15px;
+            .chevron {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+
+                position: relative;
+                &::after {
+                    content: "";
+                    border-right: 1px solid $linkColor;
+                    border-bottom: 1px solid $linkColor;
+                    width: 50%;
+                    height: 50%;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 65%;
+                    -webkit-transform: translate(-30%, -50%) rotate(-45deg);
+                    -ms-transform: translate(-30%, -50%) rotate(-45deg);
+                    -o-transform: translate(-30%, -50%) rotate(-45deg);
+                    transform: translate(-30%, -50%) rotate(-45deg);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import "../../constants//Variables.scss";
+
+.footer-content {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+
+    .logoContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-icons-container {
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        .social-icon {
+            font-size: 24px;
+            padding-right: 2rem;
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+
+    .footer-notes {
+        padding-top: 0.5rem;
+
+        .footerSubNotes {
+            font-size: 12px;
+        }
+    }
+}

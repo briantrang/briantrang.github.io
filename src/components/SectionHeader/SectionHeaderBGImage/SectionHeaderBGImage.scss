@@ -1,0 +1,16 @@
+@import '../../../constants/Variables.scss';
+@import '../SectionHeader.scss';
+
+.bannerImage{
+    opacity: 1;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.sectionTitleText, 
+.sectionContentText,
+.sectionSubContentText{
+    color: white;
+    text-shadow: 1px 1px 10px black;
+}

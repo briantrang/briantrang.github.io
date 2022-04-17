@@ -1,0 +1,27 @@
+@import "../../../constants/Variables.scss";
+
+.project-tabs {
+    text-align: center;
+    padding: 2rem 0 0.5rem 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    .project-button {
+        background-color: transparent;
+        border: none;
+        text-transform: capitalize;
+        color: $grayColor;
+
+        &:focus {
+            outline: none;
+        }
+        &:focus-visible {
+            outline: #015fcc auto 1px;
+        }
+    }
+    button.project-button.active {
+        color: black;
+    }
+}

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+.project-tabs {
+  text-align: center;
+  padding: 2rem 0 0.5rem 0;
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+.project-tabs .project-button {
+  background-color: transparent;
+  border: none;
+  text-transform: capitalize;
+  color: #86868b;
+  padding-right: 2rem;
+}
+
+.project-tabs .project-button:last-child {
+  padding-right: 0;
+}
+
+.project-tabs button.project-button.active {
+  color: black;
+}
+/*# sourceMappingURL=PersonalProjects.css.map */
