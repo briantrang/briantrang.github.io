@@ -20,3 +20,6 @@ pwd
 
 # echo "Going back to main branch for development"
 # git checkout main
+
+echo "Remove temp build folder in parent"
+rm -rf ../build
