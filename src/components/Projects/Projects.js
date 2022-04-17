@@ -22,7 +22,7 @@ const Projects = (props) => {
 				freeMode={true}
 				lazy={true}
 				autoplay={{
-					delay: 1500,
+					delay: 2000,
 					disableOnInteraction: false,
 				}}
 				breakpoints={{
